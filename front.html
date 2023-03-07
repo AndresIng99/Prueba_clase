@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .mi_contenedor{
+        width: 500px;
+    }
+    .mi_contenedor::placeholder{
+        font-size: 5px;
+    }
+    .mi_contenedor:hover{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <form action="index.php" method="post">
+        <input class="mi_contenedor" type="number" placeholder="Digite número 1 ktgbdfgbdfsglkyerfgpui" name="n1" required>
+        <input type="number" placeholder="Digite número 2" name="n2" required>
+        <select name="tipo">
+            <option value="1">Suma</option>
+            <option value="2">Resta</option>
+            <option value="3">Multiplicación</option>
+            <option value="4">División</option>
+        </select>
+        <input type="submit" value="operar" name="datos">
+    </form>
+</body>
+</html>
